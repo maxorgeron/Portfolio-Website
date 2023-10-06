@@ -1,0 +1,355 @@
+@import url('https//fonts.googleeapis.com/css?family=Montserrat:500');
+
+
+body {
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    background-color: rgb(14, 14, 14);
+    
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    
+}
+
+header img {
+    width: 600px;
+    height: auto;
+    
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.navbar {
+    position: relative;
+    z-index: 999;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar ul, button {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.dropbtn {
+    background-color: rgb(14, 14, 14);
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgb(32, 37, 36);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 17px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: rgb(14, 14, 14);
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.Option_links, .dropbtn   {
+    display: inline-block;
+    padding: 40px 40px 10px 40px;
+    font-size: 20px;
+}
+
+.Reels-Home {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2.5%;
+}
+
+/* Portfolio 
+--------------------------------------------*/
+
+.portfolio-body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Portfolio-VFX {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(auto, auto);
+    margin-top: 5%;
+    grid-row-gap: 75px;
+    grid-column-gap: 15px;
+}
+
+
+
+.Portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(auto, auto);
+   
+}
+
+@media (max-width:1919px) {
+    .Portfolio {grid-template-columns: repeat(1, auto); grid-row-gap: 3px; margin: 0; }
+    .Portfolio-VFX {grid-template-columns: repeat(1,auto);}
+}
+
+
+.portfolio-item {
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    flex-direction: column; 
+    max-width: 854px;
+    max-height: 2000px;
+    
+}
+
+@media (max-width: 900px) {
+    .portfolio-item {scale: 35%;}
+}
+
+
+.portfolio-item {
+    padding-bottom: 25px;
+}
+
+.portfolio-item h2 {
+    color: #f5f5f5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 18px;
+}
+
+.portfolio-item h1 {
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+.portfolio-text {
+    margin: 0px 0 20px;
+}
+
+
+.large h2 {
+    margin: 20px 0 20px;
+}
+
+
+.Reels-Home iframe {
+    scale: 80%;
+}
+
+.resume-box iframe {
+    width: 50%
+}
+
+
+/* Footer
+--------------------------------------------*/
+
+footer {
+    margin: 50px 0 50px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+}
+
+.footer_icon {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+footer li img {
+    width: 25px;
+    height: auto;
+    
+}
+
+.footer_links li icon-4 {
+    margin-right: 20px;
+}
+
+
+.resume-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+/* Contact/About Me page ------------------------------------ */
+
+
+
+@font-face {
+    font-family: 'tt_norms';
+    src: url('/fonts/ttnorms-light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'tt_norms-black';
+    src: url('/fonts/ttnorms-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'tt_norms';
+    src: url(/fonts/ttnorms-blackitalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'tt_norms-bold';
+    src: url('/fonts/ttnorms-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'tt_norms';
+    src: url('/fonts/ttnorms-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'tt_norms';
+    src: url('/fonts/ttnorms-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'tt_norms-light';
+    src: url('/fonts/ttnorms-light-webfont.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'tt_norms-regular';
+    src: url('/fonts/ttnorms-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.aboutme-text h2 {
+    color: whitesmoke;
+    font-family: 'Montserrat';
+    font-size: 30px;
+}
+
+.aboutme-text a {
+    color: whitesmoke;
+    font-family: 'tt_norms-regular';
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+.aboutme-text h1 {
+    font-family: 'tt_norms-light';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+      
+}
+
+.aboutme-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 3.5%; 
+    position: relative;
+}
+
+
+.aboutme-page img {
+    width: 50%;
+    height: auto;
+}
+
+
+.aboutme-text {
+    width: 55%;
+    height: auto;
+   
+}
+
